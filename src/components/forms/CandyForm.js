@@ -107,7 +107,7 @@ const Dropdown = ({label, options, onChange})  => {
         {label}
         <select onChange={(event) => {onChange(event)}}>
             {options.map( (option) => {
-               return <option value={option.id}>{option.name}</option>
+               return <option  key={option.id} value={option.id}>{option.name}</option>
 
             })}
         </select>
